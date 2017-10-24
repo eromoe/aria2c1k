@@ -29,6 +29,6 @@ patch -u -p1 < ../c1k.patch && \
 	PKG_CONFIG_PATH="$PREFIX/lib/pkgconfig" && \
 make && \
 cd src && \
-$HOST-strip aria2c.exe && \
+strip aria2c.exe && \
 7z a -mx=9 ../../aria2c1k-${VER_ARIA2}-mingw-x86_64-static.7z aria2c.exe
 
